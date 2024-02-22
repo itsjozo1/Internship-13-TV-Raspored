@@ -11,8 +11,19 @@ header {
   justify-content: space-between;
 }
 
-.headline-container {
+.headline-container,
+.hamburger {
   display: flex;
   align-items: center;
   gap: 1rem;
+}
+
+.hamburger a {
+  text-decoration: none;
+  color: black;
+}
+
+.chanels-container {
+  width: 90%;
+  margin: 4rem auto;
 }
