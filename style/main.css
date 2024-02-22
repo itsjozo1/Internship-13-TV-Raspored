@@ -27,3 +27,8 @@ header {
   width: 90%;
   margin: 4rem auto;
 }
+
+.channel-image {
+  max-width: 10rem;
+  height: auto;
+}

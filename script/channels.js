@@ -17,6 +17,8 @@ const tvChannels = [
     {
         id: 4,
         name: "Cinestar series",
-        image: "https://www.studiosnooze.com/projects/Cinestar/cinestar-logo.jpg"
+        image: "https://www.supernova-colosseum.hr//fileadmin/shared/stores/Cinestar/Cinestar.jpg"
     }
 ]
+
+export {tvChannels}

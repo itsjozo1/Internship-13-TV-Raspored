@@ -400,6 +400,8 @@ const tvPrograms = [
         endTime: "00:00"
     },
   ];
+
+  export {tvPrograms};
   
 
   
