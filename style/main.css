@@ -1,5 +1,9 @@
-body {
+* {
   padding: 0;
+  margin: 0;
+}
+
+body {
   margin: 0 auto;
   max-width: 1700px;
 }
@@ -23,12 +27,42 @@ header {
   color: black;
 }
 
-.chanels-container {
+.channels-container {
   width: 90%;
   margin: 4rem auto;
+  overflow: scroll;
+}
+
+.channel-container {
+  height: 5rem;
+  width: 200%;
+  display: flex;
+  flex-direction: row;
+}
+
+.program-container {
+  border: 0.5px solid gray;
+}
+
+.channels-container::-webkit-scrollbar {
+  display: none;
 }
 
 .channel-image {
-  max-width: 10rem;
+  min-width: 10rem;
   height: auto;
+  margin-right: 2rem;
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+
+.program-start-time {
+  color: gray;
+  margin: 0.5rem;
+  font-size: 0.8rem;
+}
+
+.program-headline {
+  margin-left: 0.5rem;
 }

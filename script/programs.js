@@ -137,7 +137,7 @@ const tvPrograms = [
         image: "https://emibo.com.hr/5_storage-share/6790_Slika-Pozadina-za-Glazbene-Note-Tema-Pozadina-Crkveno.jpg",
         channelId: 1,
         startTime: "00:00",
-        endTime: "05:00"
+        endTime: "06:30"
     },
     {
         id: 16,
@@ -166,7 +166,7 @@ const tvPrograms = [
         genre: ["Informativni program", "Zabavni program"],
         image: "https://direktno.hr/upload/publish/83710/dobro-jutro1_5900a3442b40e.jpg",
         channelId: 1,
-        startTime: "6:30",
+        startTime: "06:30",
         endTime: "10:00"
     },  
     {
@@ -217,7 +217,7 @@ const tvPrograms = [
         image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEWZFxLXYSQ89Oe5ArCjKsj6GXtxgI0XILBQ&usqp=CAU",
         channelId: 2,
         startTime: "00:00",
-        endTime: "04:00"
+        endTime: "05:00"
     },
     {
         id: 24,
@@ -286,7 +286,7 @@ const tvPrograms = [
         genre: ["Informativni program"],
         image: "https://images.rtl.hr/media/images/822x468/Oct2022/4edc4c1ff2d735034715_41154.jpg?v=3671",
         channelId: 2,
-        startTime: "18.00",
+        startTime: "18:00",
         endTime: "19:00"
     },
     {
