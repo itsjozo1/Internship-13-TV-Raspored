@@ -11,7 +11,7 @@ const getProgramsByChannel = (channelId) => {
         });
 };
 
-const createProgramCard = (tvProgram, container) => {
+const createProgramCard = (tvProgram, container, currentTimeInMinutes) => {
     const programCard = document.createElement("div");
     programCard.classList.add("program-container");
 
@@ -25,13 +25,7 @@ const createProgramCard = (tvProgram, container) => {
         endTime = 1440;
     }
 
-    const currentTime = new Date();
-    const currentHour = currentTime.getHours();
-    const currentMinute = currentTime.getMinutes();
-    const currentTimeInMinutes = currentHour * 60 + currentMinute;
-
-    const programCardWidth = ((endTime - startTime) / 1440 * 100).toFixed(2); // FLoor to 2 decimal places
-    console.log(programCardWidth);
+    const programCardWidth = ((endTime - startTime) / 1440 * 100).toFixed(2); 
 
     programCard.style.width = `${programCardWidth}%`;
 
@@ -41,13 +35,19 @@ const createProgramCard = (tvProgram, container) => {
     `;
 
     if (currentTimeInMinutes >= startTime && currentTimeInMinutes <= endTime) {
-        programCard.style.backgroundColor = "rgb(243 243 243)"; // Change background color if program is live
+        programCard.style.backgroundColor = "rgb(243 243 243)"; 
     }
 
     container.appendChild(programCard);
 };
 
 const channelsContainer = document.querySelector(".channels-container");
+const realTimeLine = document.querySelector(".real-time-line")
+
+const currentTime = new Date();
+const currentHour = currentTime.getHours();
+const currentMinute = currentTime.getMinutes();
+const currentTimeInMinutes = currentHour * 60 + currentMinute;
 
 tvChannels.forEach(element => {
     const channel = document.createElement("div");
@@ -58,6 +58,15 @@ tvChannels.forEach(element => {
     channelsContainer.appendChild(channel);
     let programsByChannel = getProgramsByChannel(element.id);
     programsByChannel.forEach(element => {
-        createProgramCard(element, channel)
+        createProgramCard(element, channel, currentTimeInMinutes)
     });
 });
+
+let currentPosition = currentTimeInMinutes/1440*100;
+
+const currentHourPosition = currentHour * 60; 
+const scrollOffset = currentHourPosition / 1440 * channelsContainer.scrollWidth;
+console.log(currentPosition);
+
+channelsContainer.scrollLeft = scrollOffset;
+realTimeLine.style.left = `calc(${currentPosition*2}% + 1.5rem)`;

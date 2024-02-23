@@ -31,6 +31,7 @@ header {
   width: 90%;
   margin: 4rem auto;
   overflow: scroll;
+  position: relative;
 }
 
 .channel-container {
@@ -65,4 +66,35 @@ header {
 
 .program-headline {
   margin-left: 0.5rem;
+}
+
+.real-time-line {
+  width: 2px;
+  height: calc(100% - 3rem);
+  background-color: rgb(49, 179, 199);
+  position: absolute;
+  bottom: 0;
+  left: 250px;
+}
+
+.time-measure {
+  width: 200%;
+  height: 3rem;
+  background-color: aliceblue;
+  display: flex;
+  align-items: center;
+}
+
+.time-measure p {
+  margin-right: 2.5%;
+}
+
+.channel-block {
+  position: sticky;
+  top: 0;
+  left: 0;
+  height: 3rem;
+  width: 10rem;
+  margin-right: 2rem;
+  background-color: aliceblue;
 }

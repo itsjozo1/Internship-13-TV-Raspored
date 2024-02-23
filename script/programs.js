@@ -236,7 +236,7 @@ const tvPrograms = [
         genre: ["Zabavni program", "Reality"],
         image: "https://image.dnevnik.hr/media/images/1920x1080/Sep2023/62621153-supertalent-splash.jpg",
         channelId: 2,
-        startTime: "21:00",
+        startTime: "21:20",
         endTime: "00:00"
     },
     {
@@ -247,7 +247,7 @@ const tvPrograms = [
         image: "https://images.rtl.hr/media/images/original/Oct2021/cro-b690f102-2b47-11ec-9c27-0e39e2a72cf9_208234.jpeg?v=62fb&fop=fp:0.50:0.50",
         channelId: 2,
         startTime: "19:00",
-        endTime: "21:00"
+        endTime: "21:20"
     },
     {
         id: 27,
@@ -387,7 +387,7 @@ const tvPrograms = [
         image: "https://images.rtl.hr/media/images/1024x576/Mar2023/0f479a5b7f23074c9c39_73843.jpg?v=a52e",
         channelId: 3,
         startTime: "18:30",
-        endTime: "21:30"
+        endTime: "21:50"
     },    
     {
         id: 40,
@@ -396,7 +396,7 @@ const tvPrograms = [
         genre: ["Film", "Horor"],
         image: "https://variety.com/wp-content/uploads/2020/12/alien-1.jpg?w=1000",
         channelId: 3,
-        startTime: "21:30",
+        startTime: "21:50",
         endTime: "00:00"
     },
   ];
