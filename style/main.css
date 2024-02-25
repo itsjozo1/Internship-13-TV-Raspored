@@ -121,11 +121,30 @@ header {
   display: flex;
   flex-direction: column;
   gap: 0.75rem;
+}
+.program-details-desc {
   overflow-y: scroll;
+  max-height: 7rem;
+}
+.more-details-button {
+  width: fit-content;
+  padding: 0.2rem 0.5rem;
 }
 .program-details-close-button {
   position: absolute;
   top: 1rem;
   right: 1rem;
   cursor: pointer;
+}
+
+.adult-program-container {
+  flex-direction: column;
+  width: 20rem;
+  height: 10rem;
+  gap: 1rem;
+  padding: 2rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
