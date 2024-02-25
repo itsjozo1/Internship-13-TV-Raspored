@@ -39,6 +39,37 @@ const createProgramCard = (tvProgram, container, currentTimeInMinutes) => {
     }
 
     container.appendChild(programCard);
+
+    programCard.onclick = () => {
+        removeExistingProgramDetails();
+        createProgramDetails(tvProgram);
+    };
+};
+
+const removeExistingProgramDetails = () => {
+    const existingDetailsCards = document.querySelectorAll(".program-details-container");
+    existingDetailsCards.forEach(card => card.parentNode.removeChild(card));
+};
+
+const createProgramDetails = (tvProgram) => {
+    const programDetails = document.createElement("div");
+    programDetails.classList.add("program-details-container");
+    programDetails.innerHTML = `
+        <span class="program-details-close-button">&#10005;</span>
+        <img src="${tvProgram.image}" alt="" class="program-details-image">
+        <div class="program-details-text-container">
+            <p>${tvProgram.genre}</p>
+            <h3 class="program-details-headline">${tvProgram.title}</h3>
+            <p>${tvProgram.startTime} - ${tvProgram.endTime}</p>
+            <p>${tvProgram.desc}</p>
+        </div>
+    `;
+    document.querySelector("body").appendChild(programDetails);
+
+    const closeButton = programDetails.querySelector(".program-details-close-button"); 
+    closeButton.onclick = () => {
+        programDetails.parentNode.removeChild(programDetails); 
+    };
 };
 
 const channelsContainer = document.querySelector(".channels-container");
