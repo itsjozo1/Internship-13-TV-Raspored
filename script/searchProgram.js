@@ -2,6 +2,15 @@ import { tvPrograms } from "./programs.js";
 
 const searchButton = document.querySelector(".search-button");
 
+const isAdultProgram = (tvProgram) => {
+    if ( tvProgram.genre.includes("Program za odrasle")){
+        return "Assets/adult-program-cover.jpeg";
+    }
+    else{
+        return tvProgram.image;
+    }
+}
+
 searchButton.onclick = () => {
     const searchContainer = document.querySelector(".search-container");
     searchContainer.style.display = "block";
@@ -32,7 +41,7 @@ searchButton.onclick = () => {
             resultCard.classList.add("search-result-card");
             resultCard.innerHTML = `
                 <h3 class="search-result-headline">${result.title}</h3>
-                <img src="${result.image}" alt="" class="search-result-image">
+                <img src="${isAdultProgram(result)}" alt="" class="search-result-image">
             `;
             searchResultContainer.appendChild(resultCard);
         });
