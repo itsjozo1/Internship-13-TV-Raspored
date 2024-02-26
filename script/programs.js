@@ -214,7 +214,7 @@ const tvPrograms = [
         title: "Tarot",
         desc: "Mistični program u kojem tarot majstor čita karte i tumači sudbine gledatelja.",
         genre: ["Zabavni program"],
-        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEWZFxLXYSQ89Oe5ArCjKsj6GXtxgI0XILBQ&usqp=CAU",
+        image: "https://hac-onc.hr/wp-content/uploads/2022/10/sto-su-tarot-karte-1-scaled.jpg",
         channelId: 2,
         startTime: "00:00",
         endTime: "05:00"

@@ -76,7 +76,7 @@ const createProgramDetails = (tvProgram) => {
     programDetails.classList.add("program-details-container");
 
     const htmlNormalProgram = `
-    <span class="program-details-close-button">&#10005;</span>
+    <span class="program-details-close-button close-button">&#10005;</span>
     <img src="${tvProgram.image}" alt="" class="program-details-image">
     <div class="program-details-text-container">
         <p>${tvProgram.genre}</p>
@@ -144,4 +144,5 @@ const scrollOffset = currentHourPosition / 1440 * channelsContainer.scrollWidth;
 console.log(currentPosition);
 
 channelsContainer.scrollLeft = scrollOffset;
-realTimeLine.style.left = `calc(${currentPosition*2}% + 1.25rem)`;
+realTimeLine.style.left = `calc(${currentPosition*2}% + 5%)`;
+

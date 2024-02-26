@@ -130,7 +130,7 @@ header {
   width: fit-content;
   padding: 0.2rem 0.5rem;
 }
-.program-details-close-button {
+.close-button {
   position: absolute;
   top: 1rem;
   right: 1rem;
@@ -147,4 +147,43 @@ header {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.search-button {
+  cursor: pointer;
+}
+
+.search-container {
+  display: none;
+  background-color: gray;
+  width: 20rem;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  overflow-y: scroll;
+  opacity: 0.9;
+}
+
+.search-programs-headline {
+  margin: 1rem 2rem;
+  color: white;
+}
+
+.search-programs-input {
+  margin: 1rem 0 0 2rem;
+  height: 1.25rem;
+  width: 15rem;
+}
+
+.search-programs-result-container {
+  margin: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.search-result-image {
+  width: 100%;
+  height: auto;
 }
