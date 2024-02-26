@@ -7,7 +7,10 @@ const tvPrograms = [
         image: "https://churchlifejournal.nd.edu/assets/515222/1200x/1900px_ozymandias_breaking_bad.jpg",
         channelId: 4,
         startTime: "00:00",
-        endTime: "01:00"
+        endTime: "01:00",
+        rating: 3,
+        userRating: null,
+        isReplay: false
     },
     {
         id: 2,
@@ -17,7 +20,10 @@ const tvPrograms = [
         image: "https://cdn.vox-cdn.com/thumbor/t6MM8K66BH83ghZP7VN-u6TsLoY=/0x0:1920x1080/1200x800/filters:focal(807x72:1113x378)/cdn.vox-cdn.com/uploads/chorus_image/image/57890539/got_group.0.jpg",
         channelId: 4,
         startTime: "01:00",
-        endTime: "03:00"
+        endTime: "03:00",
+        rating: 3,
+        userRating: null,
+        isReplay: false
     },
     {
         id: 3,
@@ -27,7 +33,10 @@ const tvPrograms = [
         image: "https://beam-images.warnermediacdn.com/BEAM_LWM_DELIVERABLES/52dae4c7-2ab1-4bb9-ab1c-8100fd54e2f9/525e19cadd275c68e933773cc3bdad91a12fe10e.jpg?submitted=1684658977805&host=wbd-images.prod-vod.h264.io&partner=beamcom",
         channelId: 4,
         startTime: "03:00",
-        endTime: "04:00"
+        endTime: "04:00",
+        rating: 3,
+        userRating: null,
+        isReplay: false
     },
     {
         id: 4,
@@ -37,7 +46,10 @@ const tvPrograms = [
         image: "https://assets.teenvogue.com/photos/6436c21b4ea1fdd79f2d6c94/4:3/w_1499,h_1124,c_limit/StrangerThings_S3_Illustrated_Vertical_FINAL_RGB_Digital__EN.jpg",
         channelId: 4,
         startTime: "04:00",
-        endTime: "06:00"
+        endTime: "06:00",
+        rating: 3,
+        userRating: null,
+        isReplay: false
     },
     {
         id: 5,
@@ -47,7 +59,10 @@ const tvPrograms = [
         image: "https://m.media-amazon.com/images/S/pv-target-images/0dd8322809f5493fa8c2a8a2bbfe53a1e9960eaab0aac5517296bc9bdfa567ad.jpg",
         channelId: 4,
         startTime: "06:00",
-        endTime: "08:00"
+        endTime: "08:00",
+        rating: 3,
+        userRating: null,
+        isReplay: false
     },
     {
         id: 6,
@@ -57,7 +72,10 @@ const tvPrograms = [
         image: "https://harpersbazaar.com.au/wp-content/uploads/2022/10/The-Crown-Feature-Image-1.webp",
         channelId: 4,
         startTime: "08:00",
-        endTime: "10:00"
+        endTime: "10:00",
+        rating: 3,
+        userRating: null,
+        isReplay: false
     },
     {
         id: 7,
@@ -67,7 +85,10 @@ const tvPrograms = [
         image: "https://m.media-amazon.com/images/S/pv-target-images/53e83bc204a084572f88498d99c4e347eb3d6dbe59507889df26a02133ab9b06.jpg",
         channelId: 4,
         startTime: "10:00",
-        endTime: "13:00"
+        endTime: "13:00",
+        rating: 3,
+        userRating: null,
+        isReplay: false
     },
     {
         id: 8,
@@ -77,7 +98,10 @@ const tvPrograms = [
         image: "https://books.disney.com/content/uploads/2022/08/915a2Dr5L.jpg",
         channelId: 4,
         startTime: "13:00",
-        endTime: "16:30"
+        endTime: "16:30",
+        rating: 3,
+        userRating: null,
+        isReplay: false
     },
     {
         id: 9,
@@ -87,7 +111,10 @@ const tvPrograms = [
         image: "https://www.nme.com/wp-content/uploads/2018/12/bm.png",
         channelId: 4,
         startTime: "16:30",
-        endTime: "19:45"
+        endTime: "19:45",
+        rating: 3,
+        userRating: null,
+        isReplay: false
     },
     {
         id: 10,
@@ -97,7 +124,10 @@ const tvPrograms = [
         image: "https://m.media-amazon.com/images/M/MV5BZjllMGZlZmMtNmQ2NS00ZmZjLThkMDQtNTU5MWJlNDFiZDg1XkEyXkFqcGdeQXRyYW5zY29kZS13b3JrZmxvdw@@._V1_.jpg",
         channelId: 4,
         startTime: "19:45",
-        endTime: "21:30"
+        endTime: "21:30",
+        rating: 3,
+        userRating: null,
+        isReplay: false
     },
     {
         id: 11,
@@ -107,7 +137,10 @@ const tvPrograms = [
         image: "https://deadline.com/wp-content/uploads/2020/10/money-heist-part-4-preview-netflix.jpg?w=681&h=383&crop=1",
         channelId: 4,
         startTime: "21:30",
-        endTime: "23:00"
+        endTime: "23:00",
+        rating: 3,
+        userRating: null,
+        isReplay: false
     },
     {
         id: 12,
@@ -117,7 +150,10 @@ const tvPrograms = [
         image: "https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p14652182_b_v8_aa.jpg",
         channelId: 4,
         startTime: "23:00",
-        endTime: "00:00"
+        endTime: "00:00",
+        rating: 3,
+        userRating: null,
+        isReplay: false
     },
     {
         id: 14,
@@ -127,7 +163,10 @@ const tvPrograms = [
         image: "https://www.novilist.hr/wp-content/uploads/2023/03/7866935-scaled.jpg",
         channelId: 1,
         startTime: "12:00",
-        endTime: "13:15"
+        endTime: "13:15",
+        rating: 3,
+        userRating: null,
+        isReplay: false
     },    
     {
         id: 15,
@@ -137,7 +176,10 @@ const tvPrograms = [
         image: "https://emibo.com.hr/5_storage-share/6790_Slika-Pozadina-za-Glazbene-Note-Tema-Pozadina-Crkveno.jpg",
         channelId: 1,
         startTime: "00:00",
-        endTime: "06:30"
+        endTime: "06:30",
+        rating: 3,
+        userRating: null,
+        isReplay: false
     },
     {
         id: 16,
@@ -147,7 +189,10 @@ const tvPrograms = [
         image: "https://s14.gonet.tv/api/obr/skupina_556f1341cc0dae923e66fb58987f70ff-960.jpg",
         channelId: 1,
         startTime: "10:00",
-        endTime: "12:00"
+        endTime: "12:00",
+        rating: 3,
+        userRating: null,
+        isReplay: false
     },
     {
         id: 17,
@@ -157,7 +202,10 @@ const tvPrograms = [
         image: "https://bodulija.net/wp-content/uploads/2021/09/podmorje_1.jpg",
         channelId: 1,
         startTime: "13:15",
-        endTime: "15:30"
+        endTime: "15:30",
+        rating: 3,
+        userRating: null,
+        isReplay: false
     }, 
     {
         id: 18,
@@ -167,7 +215,10 @@ const tvPrograms = [
         image: "https://direktno.hr/upload/publish/83710/dobro-jutro1_5900a3442b40e.jpg",
         channelId: 1,
         startTime: "06:30",
-        endTime: "10:00"
+        endTime: "10:00",
+        rating: 3,
+        userRating: null,
+        isReplay: false
     },  
     {
         id: 19,
@@ -177,7 +228,10 @@ const tvPrograms = [
         image: "https://apihrt.akamaized.net/media/1a/b3/01-crno-bijeli-svijet-2-logo-20220708080101.webp",
         channelId: 1,
         startTime: "15:30",
-        endTime: "17:00"
+        endTime: "17:00",
+        rating: 3,
+        userRating: null,
+        isReplay: false
     }, 
     {
         id: 20,
@@ -187,7 +241,10 @@ const tvPrograms = [
         image: "https://apihrt.akamaized.net/media/25/b6/potjera-20211129122133.webp",
         channelId: 1,
         startTime: "17:00",
-        endTime: "19:00"
+        endTime: "19:00",
+        rating: 3,
+        userRating: null,
+        isReplay: false
     },
     {
         id: 21,
@@ -197,7 +254,10 @@ const tvPrograms = [
         image: "https://apihrt.akamaized.net/media/a5/43/tvd2-logo-20210124175805.webp",
         channelId: 1,
         startTime: "19:00",
-        endTime: "21:00"
+        endTime: "21:00",
+        rating: 3,
+        userRating: null,
+        isReplay: false
     },
     {
         id: 22,
@@ -207,7 +267,10 @@ const tvPrograms = [
         image: "https://www.vecernji.hr/media/img/e6/ce/d500eb1e05a1df12ae3d.jpeg",
         channelId: 1,
         startTime: "21:00",
-        endTime: "00:00"
+        endTime: "00:00",
+        rating: 3,
+        userRating: null,
+        isReplay: false
     },
     {
         id: 23,
@@ -217,7 +280,10 @@ const tvPrograms = [
         image: "https://hac-onc.hr/wp-content/uploads/2022/10/sto-su-tarot-karte-1-scaled.jpg",
         channelId: 2,
         startTime: "00:00",
-        endTime: "05:00"
+        endTime: "05:00",
+        rating: 3,
+        userRating: null,
+        isReplay: false
     },
     {
         id: 24,
@@ -227,7 +293,10 @@ const tvPrograms = [
         image: "https://www.vecernji.hr/media/img/f5/3d/da694b36e9ed92ecf020.jpeg",
         channelId: 2,
         startTime: "05:00",
-        endTime: "11:00"
+        endTime: "11:00",
+        rating: 3,
+        userRating: null,
+        isReplay: false
     },
     {
         id: 25,
@@ -237,7 +306,10 @@ const tvPrograms = [
         image: "https://image.dnevnik.hr/media/images/1920x1080/Sep2023/62621153-supertalent-splash.jpg",
         channelId: 2,
         startTime: "21:20",
-        endTime: "00:00"
+        endTime: "00:00",
+        rating: 3,
+        userRating: null,
+        isReplay: false
     },
     {
         id: 26,
@@ -247,7 +319,10 @@ const tvPrograms = [
         image: "https://images.rtl.hr/media/images/original/Oct2021/cro-b690f102-2b47-11ec-9c27-0e39e2a72cf9_208234.jpeg?v=62fb&fop=fp:0.50:0.50",
         channelId: 2,
         startTime: "19:00",
-        endTime: "21:20"
+        endTime: "21:20",
+        rating: 3,
+        userRating: null,
+        isReplay: false
     },
     {
         id: 27,
@@ -257,7 +332,10 @@ const tvPrograms = [
         image: "https://images.rtl.hr/media/images/822x468/Nov2022/6f62e7bbc9fa2debe3eb_57321.jpg?v=afce",
         channelId: 2,
         startTime: "11:00",
-        endTime: "13:00"
+        endTime: "13:00",
+        rating: 3,
+        userRating: null,
+        isReplay: false
     },
     {
         id: 28,
@@ -267,7 +345,10 @@ const tvPrograms = [
         image: "https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p20056_v_h10_ab.jpg",
         channelId: 2,
         startTime: "13:00",
-        endTime: "16:00"
+        endTime: "16:00",
+        rating: 3,
+        userRating: null,
+        isReplay: false
     },
     {
         id: 29,
@@ -277,7 +358,10 @@ const tvPrograms = [
         image: "https://image.dnevnik.hr/media/images/840x460/Jan2019/61625676.jpg",
         channelId: 2,
         startTime: "16:00",
-        endTime: "18:00"
+        endTime: "18:00",
+        rating: 3,
+        userRating: null,
+        isReplay: false
     },
     {
         id: 30,
@@ -287,7 +371,10 @@ const tvPrograms = [
         image: "https://images.rtl.hr/media/images/822x468/Oct2022/4edc4c1ff2d735034715_41154.jpg?v=3671",
         channelId: 2,
         startTime: "18:00",
-        endTime: "19:00"
+        endTime: "19:00",
+        rating: 3,
+        userRating: null,
+        isReplay: false
     },
     {
         id: 31,
@@ -297,7 +384,10 @@ const tvPrograms = [
         image: "https://trademarks.justia.com/media/og_image.php?serial=77668581",
         channelId: 3,
         startTime: "00:00",
-        endTime: "02:00"
+        endTime: "02:00",
+        rating: 3,
+        userRating: null,
+        isReplay: false
     },
     {
         id: 32,
@@ -307,7 +397,10 @@ const tvPrograms = [
         image: "https://s3-prod.adage.com/s3fs-public/styles/800x600/public/20200904_pornhubLaborDay_3x2_0.jpg",
         channelId: 3,
         startTime: "03:00",
-        endTime: "04:00"
+        endTime: "04:00",
+        rating: 3,
+        userRating: null,
+        isReplay: false
     },
     {
         id: 33,
@@ -317,7 +410,10 @@ const tvPrograms = [
         image: "https://cigars.roku.com/v1/contain/800x454/https%3A%2F%2Fimage.roku.com%2Fdeveloper_channels%2Fprod%2F118c3798ac12a2c4fb4029d9452654ec69d90e7821f45f7da7e79987edf1b6be.jpg",
         channelId: 3,
         startTime: "02:00",
-        endTime: "03:00"
+        endTime: "03:00",
+        rating: 3,
+        userRating: null,
+        isReplay: false
     },
     {
         id: 13,
@@ -327,7 +423,10 @@ const tvPrograms = [
         image: "https://barikada.com/wp-content/uploads/2017/02/Klapa-Iskon-Band.jpg",
         channelId: 3,
         startTime: "04:00",
-        endTime: "08:00"
+        endTime: "08:00",
+        rating: 3,
+        userRating: null,
+        isReplay: false
     },
     {
         id: 34,
@@ -337,7 +436,10 @@ const tvPrograms = [
         image: "https://t3.ftcdn.net/jpg/01/50/68/38/360_F_150683839_fzRSwBu0bcb6tjDvOGw3wOdIWpnOUayz.jpg",
         channelId: 3,
         startTime: "08:00",
-        endTime: "11:00"
+        endTime: "11:00",
+        rating: 3,
+        userRating: null,
+        isReplay: false
     },
     {
         id: 35,
@@ -347,7 +449,10 @@ const tvPrograms = [
         image: "https://image.dnevnik.hr/media/images/1600xX/Sep2023/62636822-starci.jpg",
         channelId: 3,
         startTime: "11:00",
-        endTime: "13:00"
+        endTime: "13:00",
+        rating: 3,
+        userRating: null,
+        isReplay: false
     },
     {
         id: 36,
@@ -357,7 +462,10 @@ const tvPrograms = [
         image: "https://cdn.vox-cdn.com/thumbor/1i4ECs3zLWaWf32jmEFAc_U4AyI=/0x0:1920x1080/1200x800/filters:focal(807x387:1113x693)/cdn.vox-cdn.com/uploads/chorus_image/image/54014619/shrek.0.jpg",
         channelId: 3,
         startTime: "13:00",
-        endTime: "14:30"
+        endTime: "14:30",
+        rating: 3,
+        userRating: null,
+        isReplay: false
     },    
     {
         id: 37,
@@ -367,7 +475,10 @@ const tvPrograms = [
         image: "https://lidermedia.hr/images/slike/2022/01/13/405236.jpg",
         channelId: 3,
         startTime: "14:30",
-        endTime: "16:00"
+        endTime: "16:00",
+        rating: 3,
+        userRating: null,
+        isReplay: false
     },   
     {
         id: 38,
@@ -377,7 +488,10 @@ const tvPrograms = [
         image: "https://static2.story.hr/api/v3/images/108/216/277244?ts=2021-09-01T13:35:08",
         channelId: 3,
         startTime: "16:00",
-        endTime: "18:30"
+        endTime: "18:30",
+        rating: 3,
+        userRating: null,
+        isReplay: false
     },    
     {
         id: 39,
@@ -387,7 +501,10 @@ const tvPrograms = [
         image: "https://images.rtl.hr/media/images/1024x576/Mar2023/0f479a5b7f23074c9c39_73843.jpg?v=a52e",
         channelId: 3,
         startTime: "18:30",
-        endTime: "21:50"
+        endTime: "21:50",
+        rating: 3,
+        userRating: null,
+        isReplay: false
     },    
     {
         id: 40,
@@ -397,11 +514,37 @@ const tvPrograms = [
         image: "https://variety.com/wp-content/uploads/2020/12/alien-1.jpg?w=1000",
         channelId: 3,
         startTime: "21:50",
-        endTime: "00:00"
+        endTime: "00:00",
+        rating: 3,
+        userRating: null,
+        isReplay: false
     },
   ];
 
-  export {tvPrograms};
+
+  if (tvPrograms.length === 0) {
+      const tvProgramsString = JSON.stringify(tvPrograms);
+      localStorage.setItem("tvPrograms", tvProgramsString);
+  }
+  
+  const getTvProgramById = (tvProgram) => {
+    let tvPrograms = JSON.parse(localStorage.getItem("tvPrograms"));
+    return tvPrograms.find(program => program.id === tvProgram.id);
+};
+
+const setNewUserRating = (tvProgramId, newUserRating) => {
+    let tvPrograms = JSON.parse(localStorage.getItem("tvPrograms"));
+
+    let tvProgramIndex = tvPrograms.findIndex(program => program.id === tvProgramId);
+
+    if (tvProgramIndex !== -1) {
+        tvPrograms[tvProgramIndex].userRating = newUserRating;
+
+        localStorage.setItem("tvPrograms", JSON.stringify(tvPrograms));
+    }
+};
+
+  export {tvPrograms, getTvProgramById, setNewUserRating};
   
 
   

@@ -32,11 +32,6 @@
   margin: 1rem 0.2rem;
   padding: 5px;
 }
-
-.stars-container {
-  display: flex;
-  gap: 2px;
-}
 .rate i,
 .rate i:hover ~ i {
   color: #222;
@@ -58,4 +53,8 @@
 .adult-program-page {
   width: fit-content;
   height: 20rem;
+}
+
+#selected {
+  color: #fc0;
 }

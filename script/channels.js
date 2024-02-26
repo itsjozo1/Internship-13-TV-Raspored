@@ -21,4 +21,11 @@ const tvChannels = [
     }
 ]
 
+
+
+if (tvChannels.length === 0) {
+    const tvChannelsString = JSON.stringify(tvChannels);
+    localStorage.setItem("tvChannels", tvChannelsString);
+}
+
 export {tvChannels}

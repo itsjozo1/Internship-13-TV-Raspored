@@ -58,7 +58,7 @@ const createProgramCard = (tvProgram, container, currentTimeInMinutes) => {
 const createProgramSchedule = () => {
     const channelsContainer = document.querySelector(".channels-container");
     const realTimeLine = document.querySelector(".real-time-line")
-
+    
     const currentTime = new Date();
     const currentHour = currentTime.getHours();
     const currentMinute = currentTime.getMinutes();
@@ -84,7 +84,7 @@ const createProgramSchedule = () => {
     console.log(currentPosition);
 
     channelsContainer.scrollLeft = scrollOffset;
-    realTimeLine.style.left = `calc(${currentPosition*2}% + 3%)`;
+    realTimeLine.style.left = `calc(12rem + ${currentPosition}%)`;
 }
 
 createProgramSchedule();

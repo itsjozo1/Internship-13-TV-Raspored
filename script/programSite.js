@@ -1,6 +1,7 @@
 import { changePage } from "./changePage.js";
 import { tvChannels } from "./channels.js";
 import { PARENT_PASSWORD } from "./createProgramDetails.js";
+import { getTvProgramById, setNewUserRating } from "./programs.js";
 
 
 const createProgramPage = (tvProgram, programPageContainer) => {
@@ -11,12 +12,48 @@ const createProgramPage = (tvProgram, programPageContainer) => {
         <div class="program-page-desc">
             <p>${tvProgram.genre}</p>
             <h2>${tvProgram.title}</h2>
-            <span class="rate"><i>★</i><i>★</i><i>★</i><i>★</i><i>★</i></span>
-            <p>${tvProgram.startTime} - ${tvProgram.endTime}</p>
+            <span class="rate">
+                <i class="star" id="1">★</i>
+                <i class="star" id="2">★</i>
+                <i class="star" id="3">★</i>
+                <i class="star" id="4">★</i>
+                <i class="star" id="5">★</i>
+            </span>
+            <p>${tvProgram.startTime} - ${tvProgram.endTime}  ${tvProgram.rating}★</p>
             <p>${tvProgram.desc}</p>
             <button class="add-watchlist-button">+ Dodaj na watchlistu</button>
         </div>
     `;
+
+    let index = getTvProgramById(tvProgram).userRating;
+    let stars = document.querySelectorAll(".star");
+    
+    stars.forEach((s, i) => {
+        if (index === null) {
+            s.addEventListener("click", () => {
+                setNewUserRating(tvProgram.id, i + 1);
+                updateStarRatingDisplay(stars, i);
+            });
+        } else {
+            s.addEventListener("click", () => {
+                setNewUserRating(tvProgram.id, i + 1);
+                updateStarRatingDisplay(stars, i);
+            });
+    
+            updateStarRatingDisplay(stars, index - 1);
+        }
+    });
+    
+    function updateStarRatingDisplay(stars, selectedIndex) {
+        stars.forEach((s, i) => {
+            if (i <= selectedIndex) {
+                s.id = "selected";
+            } else {
+                s.id = "";
+            }
+        });
+    }
+    
 }
 
 const createProgramDetailSite = async (tvProgram, href) => {
