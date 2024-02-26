@@ -1,4 +1,5 @@
 import { tvPrograms } from "./programs.js";
+import { createProgramDetailSite } from "./programSite.js";
 
 const searchButton = document.querySelector(".search-button");
 
@@ -39,12 +40,20 @@ searchButton.onclick = () => {
         searchResults.forEach(result => {
             const resultCard = document.createElement("div");
             resultCard.classList.add("search-result-card");
+            resultCard.setAttribute("data-href", "programSite.html"); 
             resultCard.innerHTML = `
                 <h3 class="search-result-headline">${result.title}</h3>
                 <img src="${isAdultProgram(result)}" alt="" class="search-result-image">
             `;
+        
             searchResultContainer.appendChild(resultCard);
+        
+            resultCard.onclick = () => {
+                createProgramDetailSite(result, resultCard.getAttribute('data-href'));
+                searchContainer.style.display = "none";
+            };
         });
+        
 
         if (searchResults.length === 0 && inputValue !== "") {
             const noResultMessage = document.createElement("div");

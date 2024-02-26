@@ -3,16 +3,52 @@
 }
 
 .program-page-container {
-  margin: 3rem;
+  margin: 3rem auto;
   display: flex;
   gap: 2rem;
+  position: relative;
+  width: 80%;
 }
 
-.program-page-container img {
+.program-page-image {
   width: 50%;
 }
 
 .program-page-container p {
   opacity: 0.7;
   margin: 0.5rem 0;
+}
+
+.program-page-channel {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 4rem;
+}
+
+.add-watchlist-button {
+  margin: 1rem 0.2rem;
+  padding: 5px;
+}
+
+.stars-container {
+  display: flex;
+  gap: 2px;
+}
+.rate i,
+.rate i:hover ~ i {
+  color: #222;
+  text-shadow: none;
+  transition: color 200ms, text-shadow 200ms;
+  transition-delay: 0;
+}
+
+.rate:hover i {
+  color: #fc0;
+  text-shadow: #fc0 0 0 20px;
+}
+
+.rate i {
+  cursor: pointer;
+  font-style: normal;
 }

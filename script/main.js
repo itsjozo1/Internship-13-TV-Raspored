@@ -1,9 +1,7 @@
 import { tvChannels } from "./channels.js";
 import { tvPrograms } from "./programs.js";
-import { changePage } from "./changePage.js";
-import { createProgramDetailSite } from "./programSite.js";
+import { createProgramDetails } from "./createProgramDetails.js";
 
-const PARENT_PASSWORD = 123456;
 
 const getProgramsByChannel = (channelId) => {
     return tvPrograms
@@ -45,85 +43,10 @@ const createProgramCard = (tvProgram, container, currentTimeInMinutes) => {
     container.appendChild(programCard);
 
     programCard.onclick = () => {
-        removeExistingProgramDetails();
         createProgramDetails(tvProgram);
     };
 };
 
-const checkIsAdultProgram = (tvProgram) => tvProgram.genre.includes("Program za odrasle") ? true : false;
-
-
-const removeExistingProgramDetails = () => {
-    const existingDetailsCards = document.querySelectorAll(".program-details-container");
-    existingDetailsCards.forEach(card => card.parentNode.removeChild(card));
-};
-
-const createAdultProgramDetails = (programContainer) => {
-    const htmlAdultProgram = `
-    <span class="program-details-close-button">&#10005;</span>
-    <h2 class="adult-program-headline">Roditeljska zaštita</h2>
-    <p>Za informacije o programu unesite pin</p>
-    <div class="adult-program-input-holder">
-        <input type="password" class="parent-password-input"></input>
-        <button class="parent-password-button">Potvrda</button>
-    </div>
-    `;
-    programContainer.classList.add("adult-program-container");
-    programContainer.innerHTML = htmlAdultProgram;
-
-}
-
-const createProgramDetails = (tvProgram) => {
-    const programDetails = document.createElement("div");
-    programDetails.classList.add("program-details-container");
-
-    const htmlNormalProgram = `
-    <span class="program-details-close-button close-button">&#10005;</span>
-    <img src="${tvProgram.image}" alt="" class="program-details-image">
-    <div class="program-details-text-container">
-        <p>${tvProgram.genre}</p>
-        <h3 class="program-details-headline">${tvProgram.title}</h3>
-        <p>${tvProgram.startTime} - ${tvProgram.endTime}</p>
-        <p class="program-details-desc">${tvProgram.desc}</p>
-        <button class="more-details-button" href="programSite.html">Detalji</button>
-    </div>
-    `;
-
-    checkIsAdultProgram(tvProgram) == true ? createAdultProgramDetails(programDetails) : programDetails.innerHTML = htmlNormalProgram;
-    document.querySelector("body").appendChild(programDetails);
-
-    const closeButton = programDetails.querySelector(".program-details-close-button"); 
-    closeButton.onclick = () => {
-        programDetails.parentNode.removeChild(programDetails); 
-    };
-
-    const detailsButton = document.querySelector(".more-details-button");
-    detailsButton.onclick = () => {
-        programDetails.parentNode.removeChild(programDetails); 
-        createProgramDetailSite(tvProgram, detailsButton.getAttribute('href'))
-    };
-    
-
-    const parentPasswordButton = document.querySelector(".parent-password-button");
-    parentPasswordButton.onclick = () => {
-        let inputParentPassword = document.querySelector(".parent-password-input");
-
-        if (inputParentPassword.value == PARENT_PASSWORD) {
-
-            programDetails.innerHTML = htmlNormalProgram;
-            programDetails.classList.remove("adult-program-container")
-
-            const closeButton = programDetails.querySelector(".program-details-close-button"); 
-            closeButton.onclick = () => {
-                programDetails.parentNode.removeChild(programDetails); 
-            };
-        } else {
-            inputParentPassword.style = "border: 1px solid red; border-radius: 5px";
-            inputParentPassword.value = "";
-            inputParentPassword.placeholder = "Pogrešan pin";
-        }
-    };
-};
 
 const channelsContainer = document.querySelector(".channels-container");
 const realTimeLine = document.querySelector(".real-time-line")
