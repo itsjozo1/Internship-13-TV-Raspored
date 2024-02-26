@@ -1,5 +1,7 @@
 .program-page-headline {
-  margin: 2rem 3rem;
+  margin: 2rem auto;
+  width: fit-content;
+  font-size: 3rem;
 }
 
 .program-page-container {
@@ -51,4 +53,9 @@
 .rate i {
   cursor: pointer;
   font-style: normal;
+}
+
+.adult-program-page {
+  width: fit-content;
+  height: 20rem;
 }

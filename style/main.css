@@ -16,6 +16,12 @@ header {
   align-items: center;
   justify-content: space-between;
 }
+i {
+  font-size: 1.5rem;
+}
+.headline {
+  cursor: pointer;
+}
 
 .headline-container,
 .hamburger {

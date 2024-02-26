@@ -57,7 +57,7 @@ searchButton.onclick = () => {
 
         if (searchResults.length === 0 && inputValue !== "") {
             const noResultMessage = document.createElement("div");
-            noResultMessage.textContent = "No results found";
+            noResultMessage.textContent = "Nema rezultata";
             searchResultContainer.appendChild(noResultMessage);
         }
     });

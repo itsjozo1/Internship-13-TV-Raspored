@@ -1,6 +1,13 @@
 import { tvChannels } from "./channels.js";
 import { tvPrograms } from "./programs.js";
 import { createProgramDetails } from "./createProgramDetails.js";
+import { changePage} from "./changePage.js";
+
+const headline = document.querySelector(".headline");
+headline.onclick = async () => {
+    await changePage(headline.getAttribute("data-href"))
+    createProgramSchedule();
+}
 
 
 const getProgramsByChannel = (channelId) => {
@@ -48,33 +55,36 @@ const createProgramCard = (tvProgram, container, currentTimeInMinutes) => {
 };
 
 
-const channelsContainer = document.querySelector(".channels-container");
-const realTimeLine = document.querySelector(".real-time-line")
+const createProgramSchedule = () => {
+    const channelsContainer = document.querySelector(".channels-container");
+    const realTimeLine = document.querySelector(".real-time-line")
 
-const currentTime = new Date();
-const currentHour = currentTime.getHours();
-const currentMinute = currentTime.getMinutes();
-const currentTimeInMinutes = currentHour * 60 + currentMinute;
+    const currentTime = new Date();
+    const currentHour = currentTime.getHours();
+    const currentMinute = currentTime.getMinutes();
+    const currentTimeInMinutes = currentHour * 60 + currentMinute;
 
-tvChannels.forEach(element => {
-    const channel = document.createElement("div");
-    channel.classList.add("channel-container");
-    channel.innerHTML = `
-        <img src="${element.image}" alt="" class="channel-image">
-    `;
-    channelsContainer.appendChild(channel);
-    let programsByChannel = getProgramsByChannel(element.id);
-    programsByChannel.forEach(element => {
-        createProgramCard(element, channel, currentTimeInMinutes)
+    tvChannels.forEach(element => {
+        const channel = document.createElement("div");
+        channel.classList.add("channel-container");
+        channel.innerHTML = `
+            <img src="${element.image}" alt="" class="channel-image">
+        `;
+        channelsContainer.appendChild(channel);
+        let programsByChannel = getProgramsByChannel(element.id);
+        programsByChannel.forEach(element => {
+            createProgramCard(element, channel, currentTimeInMinutes)
+        });
     });
-});
 
-let currentPosition = currentTimeInMinutes/1440*100;
+    let currentPosition = currentTimeInMinutes/1440*100;
 
-const currentHourPosition = currentHour * 60; 
-const scrollOffset = currentHourPosition / 1440 * channelsContainer.scrollWidth;
-console.log(currentPosition);
+    const currentHourPosition = currentHour * 60; 
+    const scrollOffset = currentHourPosition / 1440 * channelsContainer.scrollWidth;
+    console.log(currentPosition);
 
-channelsContainer.scrollLeft = scrollOffset;
-realTimeLine.style.left = `calc(${currentPosition*2}% + 3%)`;
+    channelsContainer.scrollLeft = scrollOffset;
+    realTimeLine.style.left = `calc(${currentPosition*2}% + 3%)`;
+}
 
+createProgramSchedule();

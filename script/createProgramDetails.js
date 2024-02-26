@@ -79,4 +79,4 @@ const createProgramDetails = (tvProgram) => {
 
 }
 
-export {createProgramDetails};
+export {createProgramDetails, PARENT_PASSWORD};
