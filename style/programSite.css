@@ -1,0 +1,18 @@
+.program-page-headline {
+  margin: 2rem 3rem;
+}
+
+.program-page-container {
+  margin: 3rem;
+  display: flex;
+  gap: 2rem;
+}
+
+.program-page-container img {
+  width: 50%;
+}
+
+.program-page-container p {
+  opacity: 0.7;
+  margin: 0.5rem 0;
+}

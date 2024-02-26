@@ -1,5 +1,7 @@
 import { tvChannels } from "./channels.js";
 import { tvPrograms } from "./programs.js";
+import { changePage } from "./changePage.js";
+import { createProgramDetailSite } from "./programSite.js";
 
 const PARENT_PASSWORD = 123456;
 
@@ -83,9 +85,9 @@ const createProgramDetails = (tvProgram) => {
         <h3 class="program-details-headline">${tvProgram.title}</h3>
         <p>${tvProgram.startTime} - ${tvProgram.endTime}</p>
         <p class="program-details-desc">${tvProgram.desc}</p>
-        <button class="more-details-button">Details</body>
+        <button class="more-details-button" href="programSite.html">Detalji</button>
     </div>
-`;
+    `;
 
     checkIsAdultProgram(tvProgram) == true ? createAdultProgramDetails(programDetails) : programDetails.innerHTML = htmlNormalProgram;
     document.querySelector("body").appendChild(programDetails);
@@ -94,6 +96,13 @@ const createProgramDetails = (tvProgram) => {
     closeButton.onclick = () => {
         programDetails.parentNode.removeChild(programDetails); 
     };
+
+    const detailsButton = document.querySelector(".more-details-button");
+    detailsButton.onclick = () => {
+        programDetails.parentNode.removeChild(programDetails); 
+        createProgramDetailSite(tvProgram, detailsButton.getAttribute('href'))
+    };
+    
 
     const parentPasswordButton = document.querySelector(".parent-password-button");
     parentPasswordButton.onclick = () => {
@@ -144,5 +153,5 @@ const scrollOffset = currentHourPosition / 1440 * channelsContainer.scrollWidth;
 console.log(currentPosition);
 
 channelsContainer.scrollLeft = scrollOffset;
-realTimeLine.style.left = `calc(${currentPosition*2}% + 5%)`;
+realTimeLine.style.left = `calc(${currentPosition*2}% + 3%)`;
 
