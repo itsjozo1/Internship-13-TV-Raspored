@@ -1,6 +1,6 @@
 import { changePage } from "./changePage.js";
 import { tvChannels } from "./channels.js";
-import { PARENT_PASSWORD } from "./createProgramDetails.js";
+import {PARENT_PASSWORD} from "./parentPassword.js";
 import { getTvProgramById, setNewUserRating } from "./programs.js";
 import { addToWatchlist, isProgramInWatchlist, removeFromWatchlist } from "./watchlists.js";
 

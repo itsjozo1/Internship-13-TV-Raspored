@@ -2,10 +2,12 @@ let watchlist = [
 
 ];
 
-/* if (watchlist.length === 0) {
+const storedWatchlist = localStorage.getItem("watchlist");
+
+if (storedWatchlist === null) {
     const watchlistString = JSON.stringify(watchlist);
     localStorage.setItem("watchlist", watchlistString);
-} */
+} 
 
 const addToWatchlist = (item) => {
     let watchlist = JSON.parse(localStorage.getItem("watchlist")) || []; 

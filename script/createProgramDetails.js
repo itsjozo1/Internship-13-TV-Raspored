@@ -1,6 +1,5 @@
 import { createProgramDetailSite } from "./programSite.js";
-
-const PARENT_PASSWORD = 123456;
+import {PARENT_PASSWORD, changePassword} from "./parentPassword.js";
 
 const createNormalProgramDetails = (tvProgram) => {
     const programDetails = document.createElement("div");
@@ -41,11 +40,44 @@ const createAdultProgramDetails = (tvProgram) => {
         <div class="adult-program-input-holder">
             <input type="password" class="parent-password-input">
             <button class="parent-password-button">Potvrda</button>
+            <p class="change-parent-password">promijeni loznku</p>
         </div>
     `;
+
     programDetails.classList.add("adult-program-container");
     programDetails.innerHTML = htmlAdultProgram;
     document.body.appendChild(programDetails);
+
+    const changeParentPassLink = document.querySelector(".change-parent-password");
+    changeParentPassLink.onclick = () => {
+        programDetails.innerHTML = `
+            <span class="change-password-close-button close-button">&#10005;</span>
+            <h2>Promjena lozinke</h2>
+            <div class="change-pass-input-container">
+                <p>Stara lozinka</p>
+                <input type="password" class="old-password-input"/>
+            </div>
+            <div class="change-pass-input-container">
+                <p>Nova lozinka</p>
+                <input type="password" class="new-password-input"/>
+            </div>
+            <button class="change-password-button">Potvrda</button>
+        `;
+
+        const changePassButton = document.querySelector(".change-password-button");
+        changePassButton.onclick = () => {
+            let oldPassInput = document.querySelector(".old-password-input");
+            let newPassInput = document.querySelector(".new-password-input");
+
+            changePassword(oldPassInput, newPassInput);
+        }
+
+        const changePassCloseButton = document.querySelector(".change-password-close-button");
+        changePassCloseButton.onclick = () => {
+            programDetails.innerHTML = htmlAdultProgram;
+        }
+    }
+
 
     const closeButton = programDetails.querySelector(".program-details-close-button");
     closeButton.onclick = () => {
@@ -79,4 +111,4 @@ const createProgramDetails = (tvProgram) => {
 
 }
 
-export {createProgramDetails, PARENT_PASSWORD};
+export {createProgramDetails};

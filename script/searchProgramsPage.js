@@ -87,6 +87,7 @@ const createSearchProgramsPage = () => {
             let watchlist = JSON.parse(localStorage.getItem("watchlist")) || [];
             let filteredPrograms = filterPrograms(watchlist, name, ratingRange, selectedGenres);
             console.log(filteredPrograms);
+            searchProgramsResultContainer.innerHTML = "";
             createFilteredProgramCards(filteredPrograms, searchProgramsResultContainer);
 
         }

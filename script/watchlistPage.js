@@ -1,11 +1,13 @@
-import { addToWatchlist, removeFromWatchlist, isProgramInWatchlist } from "./watchlists.js";
 import { createProgramDetailSite } from "./programSite.js";
 import { isAdultProgram } from "./searchProgram.js";
 
-
-const createWatchlistPage = () =>{    
+const createWatchlistPage = () => {    
     const watchlistContainer = document.querySelector(".watchlist-container");
     let watchlist = JSON.parse(localStorage.getItem("watchlist")) || [];
+    
+    if (watchlist.length === 0) {
+        watchlistContainer.innerHTML = `<h2>Nema programa u watchlisti</h2>`;
+    }
     
     watchlist.forEach(program => {
         let watchlistProgramCard = document.createElement("div");
@@ -23,4 +25,4 @@ const createWatchlistPage = () =>{
     });
 }
 
-export {createWatchlistPage};
+export { createWatchlistPage };

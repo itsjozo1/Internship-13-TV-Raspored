@@ -522,10 +522,12 @@ const tvPrograms = [
   ];
 
   
-  if (tvPrograms.length === 0) {
-      const tvProgramsString = JSON.stringify(tvPrograms);
-      localStorage.setItem("tvPrograms", tvProgramsString);
-  }
+const storedTvPrograms = localStorage.getItem("tvPrograms");
+
+if (storedTvPrograms === null) {
+    const tvProgramsString = JSON.stringify(tvPrograms);
+    localStorage.setItem("tvPrograms", tvProgramsString);
+} 
   
   const getTvProgramById = (tvProgram) => {
     let tvPrograms = JSON.parse(localStorage.getItem("tvPrograms"));
