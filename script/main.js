@@ -97,7 +97,7 @@ const createProgramSchedule = () => {
     console.log(currentPosition);
 
     channelsContainer.scrollLeft = scrollOffset;
-    realTimeLine.style.left = `calc(12rem + ${currentPosition}%)`;
+    realTimeLine.style.left = `calc(${currentPosition*1.85}% + 12rem)`;
 }
 
 createProgramSchedule();

@@ -75,6 +75,7 @@ const createAdultProgramDetails = (tvProgram) => {
         const changePassCloseButton = document.querySelector(".change-password-close-button");
         changePassCloseButton.onclick = () => {
             programDetails.innerHTML = htmlAdultProgram;
+            //osta bug kad se zatvori changePassContainer da nisu u funkciji svi onclick elementi u adultContaineru
         }
     }
 

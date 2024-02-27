@@ -21,7 +21,7 @@ const tvPrograms = [
         channelId: 4,
         startTime: "01:00",
         endTime: "03:00",
-        rating: 3,
+        rating: 3.1,
         userRating: null,
         isReplay: false
     },
@@ -34,7 +34,7 @@ const tvPrograms = [
         channelId: 4,
         startTime: "03:00",
         endTime: "04:00",
-        rating: 4,
+        rating: 4.2,
         userRating: null,
         isReplay: false
     },
@@ -47,7 +47,7 @@ const tvPrograms = [
         channelId: 4,
         startTime: "04:00",
         endTime: "06:00",
-        rating: 3,
+        rating: 4.3,
         userRating: null,
         isReplay: false
     },
@@ -60,7 +60,7 @@ const tvPrograms = [
         channelId: 4,
         startTime: "06:00",
         endTime: "08:00",
-        rating: 3,
+        rating: 2.2,
         userRating: null,
         isReplay: false
     },
@@ -73,7 +73,7 @@ const tvPrograms = [
         channelId: 4,
         startTime: "08:00",
         endTime: "10:00",
-        rating: 3,
+        rating: 1.6,
         userRating: null,
         isReplay: false
     },
@@ -86,7 +86,7 @@ const tvPrograms = [
         channelId: 4,
         startTime: "10:00",
         endTime: "13:00",
-        rating: 3,
+        rating: 3.3,
         userRating: null,
         isReplay: false
     },
@@ -99,7 +99,7 @@ const tvPrograms = [
         channelId: 4,
         startTime: "13:00",
         endTime: "16:30",
-        rating: 3,
+        rating: 2.4,
         userRating: null,
         isReplay: false
     },
@@ -125,7 +125,7 @@ const tvPrograms = [
         channelId: 4,
         startTime: "19:45",
         endTime: "21:30",
-        rating: 3,
+        rating: 3.9,
         userRating: null,
         isReplay: false
     },
@@ -138,7 +138,7 @@ const tvPrograms = [
         channelId: 4,
         startTime: "21:30",
         endTime: "23:00",
-        rating: 3,
+        rating: 2.2,
         userRating: null,
         isReplay: false
     },
@@ -151,7 +151,7 @@ const tvPrograms = [
         channelId: 4,
         startTime: "23:00",
         endTime: "00:00",
-        rating: 3,
+        rating: 1.5,
         userRating: null,
         isReplay: false
     },
@@ -164,7 +164,7 @@ const tvPrograms = [
         channelId: 1,
         startTime: "12:00",
         endTime: "13:15",
-        rating: 3,
+        rating: 4.5,
         userRating: null,
         isReplay: false
     },    
@@ -177,7 +177,7 @@ const tvPrograms = [
         channelId: 1,
         startTime: "00:00",
         endTime: "06:30",
-        rating: 3,
+        rating: 3.3,
         userRating: null,
         isReplay: false
     },
@@ -190,7 +190,7 @@ const tvPrograms = [
         channelId: 1,
         startTime: "10:00",
         endTime: "12:00",
-        rating: 3,
+        rating: 2.2,
         userRating: null,
         isReplay: false
     },
@@ -203,7 +203,7 @@ const tvPrograms = [
         channelId: 1,
         startTime: "13:15",
         endTime: "15:30",
-        rating: 3,
+        rating: 1.4,
         userRating: null,
         isReplay: false
     }, 
@@ -216,7 +216,7 @@ const tvPrograms = [
         channelId: 1,
         startTime: "06:30",
         endTime: "10:00",
-        rating: 3,
+        rating: 3.6,
         userRating: null,
         isReplay: false
     },  
@@ -242,7 +242,7 @@ const tvPrograms = [
         channelId: 1,
         startTime: "17:00",
         endTime: "19:00",
-        rating: 3,
+        rating: 3.9,
         userRating: null,
         isReplay: false
     },
@@ -255,7 +255,7 @@ const tvPrograms = [
         channelId: 1,
         startTime: "19:00",
         endTime: "21:00",
-        rating: 3,
+        rating: 3.2,
         userRating: null,
         isReplay: false
     },
@@ -268,7 +268,7 @@ const tvPrograms = [
         channelId: 1,
         startTime: "21:00",
         endTime: "00:00",
-        rating: 3,
+        rating: 3.1,
         userRating: null,
         isReplay: false
     },
@@ -281,7 +281,7 @@ const tvPrograms = [
         channelId: 2,
         startTime: "00:00",
         endTime: "05:00",
-        rating: 3,
+        rating: 2.3,
         userRating: null,
         isReplay: false
     },
@@ -294,7 +294,7 @@ const tvPrograms = [
         channelId: 2,
         startTime: "05:00",
         endTime: "11:00",
-        rating: 3,
+        rating: 1.3,
         userRating: null,
         isReplay: false
     },
@@ -307,7 +307,7 @@ const tvPrograms = [
         channelId: 2,
         startTime: "21:20",
         endTime: "00:00",
-        rating: 3,
+        rating: 1.1,
         userRating: null,
         isReplay: false
     },
@@ -320,7 +320,7 @@ const tvPrograms = [
         channelId: 2,
         startTime: "19:00",
         endTime: "21:20",
-        rating: 3,
+        rating: 2,
         userRating: null,
         isReplay: false
     },
@@ -333,7 +333,7 @@ const tvPrograms = [
         channelId: 2,
         startTime: "11:00",
         endTime: "13:00",
-        rating: 3,
+        rating: 1.4,
         userRating: null,
         isReplay: false
     },
@@ -359,7 +359,7 @@ const tvPrograms = [
         channelId: 2,
         startTime: "16:00",
         endTime: "18:00",
-        rating: 3,
+        rating: 3.1,
         userRating: null,
         isReplay: false
     },
@@ -385,7 +385,7 @@ const tvPrograms = [
         channelId: 3,
         startTime: "00:00",
         endTime: "02:00",
-        rating: 3,
+        rating: 3.2,
         userRating: null,
         isReplay: false
     },
@@ -398,7 +398,7 @@ const tvPrograms = [
         channelId: 3,
         startTime: "03:00",
         endTime: "04:00",
-        rating: 3,
+        rating: 4.9,
         userRating: null,
         isReplay: false
     },
@@ -411,7 +411,7 @@ const tvPrograms = [
         channelId: 3,
         startTime: "02:00",
         endTime: "03:00",
-        rating: 3,
+        rating: 3.2,
         userRating: null,
         isReplay: false
     },
@@ -424,7 +424,7 @@ const tvPrograms = [
         channelId: 3,
         startTime: "04:00",
         endTime: "08:00",
-        rating: 3,
+        rating: 3.1,
         userRating: null,
         isReplay: false
     },
@@ -437,7 +437,7 @@ const tvPrograms = [
         channelId: 3,
         startTime: "08:00",
         endTime: "11:00",
-        rating: 3,
+        rating: 4.2,
         userRating: null,
         isReplay: false
     },
@@ -450,7 +450,7 @@ const tvPrograms = [
         channelId: 3,
         startTime: "11:00",
         endTime: "13:00",
-        rating: 3,
+        rating: 3.9,
         userRating: null,
         isReplay: false
     },
@@ -463,7 +463,7 @@ const tvPrograms = [
         channelId: 3,
         startTime: "13:00",
         endTime: "14:30",
-        rating: 3,
+        rating: 5,
         userRating: null,
         isReplay: false
     },    
@@ -476,7 +476,7 @@ const tvPrograms = [
         channelId: 3,
         startTime: "14:30",
         endTime: "16:00",
-        rating: 3,
+        rating: 2.5,
         userRating: null,
         isReplay: false
     },   
@@ -489,7 +489,7 @@ const tvPrograms = [
         channelId: 3,
         startTime: "16:00",
         endTime: "18:30",
-        rating: 3,
+        rating: 3.6,
         userRating: null,
         isReplay: false
     },    
@@ -502,7 +502,7 @@ const tvPrograms = [
         channelId: 3,
         startTime: "18:30",
         endTime: "21:50",
-        rating: 3,
+        rating: 2.2,
         userRating: null,
         isReplay: false
     },    
@@ -515,7 +515,7 @@ const tvPrograms = [
         channelId: 3,
         startTime: "21:50",
         endTime: "00:00",
-        rating: 3,
+        rating: 1.7,
         userRating: null,
         isReplay: false
     },
