@@ -1,4 +1,5 @@
 @import url(./programSite.css);
+@import url(./watchlist.css);
 
 * {
   padding: 0;
@@ -19,7 +20,9 @@ header {
 i {
   font-size: 1.5rem;
 }
-.headline {
+.headline,
+.watchlist-link,
+.programs-link {
   cursor: pointer;
 }
 

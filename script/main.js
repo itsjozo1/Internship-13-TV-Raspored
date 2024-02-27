@@ -2,13 +2,19 @@ import { tvChannels } from "./channels.js";
 import { tvPrograms } from "./programs.js";
 import { createProgramDetails } from "./createProgramDetails.js";
 import { changePage} from "./changePage.js";
+import { createWatchlistPage } from "./watchlistPage.js";
+
+const watchlistLink = document.querySelector(".watchlist-link");
+watchlistLink.onclick = async () => {
+    await changePage(watchlistLink.getAttribute("data-href"));
+    createWatchlistPage();
+};
 
 const headline = document.querySelector(".headline");
 headline.onclick = async () => {
-    await changePage(headline.getAttribute("data-href"))
+    await changePage(headline.getAttribute("data-href"));
     createProgramSchedule();
 }
-
 
 const getProgramsByChannel = (channelId) => {
     return tvPrograms
