@@ -2,7 +2,11 @@ import { changePage } from "./changePage.js";
 import { tvChannels } from "./channels.js";
 import { PARENT_PASSWORD } from "./createProgramDetails.js";
 import { getTvProgramById, setNewUserRating } from "./programs.js";
+import { addToWatchlist, isProgramInWatchlist, removeFromWatchlist } from "./watchlists.js";
 
+const changeButtonWatchlist = (item) => {
+    return isProgramInWatchlist(item) === true ? "- Ukloni iz watchliste" : "+ Dodaj na watchlistu";
+}
 
 const createProgramPage = (tvProgram, programPageContainer) => {
     const tvChannel = tvChannels.find(channel => channel.id === tvProgram.channelId);
@@ -21,7 +25,7 @@ const createProgramPage = (tvProgram, programPageContainer) => {
             </span>
             <p>${tvProgram.startTime} - ${tvProgram.endTime}  ${tvProgram.rating}★</p>
             <p>${tvProgram.desc}</p>
-            <button class="add-watchlist-button">+ Dodaj na watchlistu</button>
+            <button class="add-watchlist-button">${changeButtonWatchlist(tvProgram)}</button>
         </div>
     `;
 
@@ -52,6 +56,17 @@ const createProgramPage = (tvProgram, programPageContainer) => {
                 s.id = "";
             }
         });
+    }
+
+    let addWatchListButton = document.querySelector(".add-watchlist-button");
+    addWatchListButton.onclick = () => {
+        if (isProgramInWatchlist(tvProgram)) {
+            removeFromWatchlist(tvProgram);
+        }
+        else{
+            addToWatchlist(tvProgram);
+        }
+        addWatchListButton.textContent = changeButtonWatchlist(tvProgram);
     }
     
 }
