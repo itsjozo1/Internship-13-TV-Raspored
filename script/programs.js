@@ -544,7 +544,23 @@ const setNewUserRating = (tvProgramId, newUserRating) => {
     }
 };
 
-  export {tvPrograms, getTvProgramById, setNewUserRating};
+const getAllGenres = () => {
+    let tvPrograms = JSON.parse(localStorage.getItem("tvPrograms"));
+    let allGenres = [];
+
+    tvPrograms.forEach(program => {
+        program.genre.forEach(genre => {
+            if (!allGenres.includes(genre)) {
+                allGenres.push(genre);
+            }
+        });
+    });
+
+    return allGenres;
+};
+
+
+export {tvPrograms, getTvProgramById, setNewUserRating, getAllGenres};
   
 
   

@@ -62,3 +62,5 @@ searchButton.onclick = () => {
         }
     });
 };
+
+export {isAdultProgram};

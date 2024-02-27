@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Programs</title>
+  </head>
+  <body>
+    <div id="root">
+      <h1 class="programs-page-headline">Search programs</h1>
+      <div class="programs-search-container">
+        <div class="programs-search-filter">
+          <h3>Naslov</h3>
+          <input type="text" class="filter-name-input" />
+          <h3>Kategorije</h3>
+          <div class="genre-container"></div>
+          <div class="rating-filter-container">
+            <h3>Ocijena</h3>
+            <input type="number" class="filter-rating-min" />
+            do
+            <input type="number" class="filter-rating-max" />
+          </div>
+          <div class="watchlist-filter">
+            <h3>Watchlista</h3>
+            <input type="checkbox" class="filter-watchlist-checkbox" />
+          </div>
+          <button class="filtered-programs-button">Pretraži</button>
+        </div>
+        <div class="programs-search-result-container"></div>
+      </div>
+    </div>
+  </body>
+</html>

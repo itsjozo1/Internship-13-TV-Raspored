@@ -3,6 +3,7 @@ import { tvPrograms } from "./programs.js";
 import { createProgramDetails } from "./createProgramDetails.js";
 import { changePage} from "./changePage.js";
 import { createWatchlistPage } from "./watchlistPage.js";
+import { createSearchProgramsPage } from "./searchProgramsPage.js";
 
 const watchlistLink = document.querySelector(".watchlist-link");
 watchlistLink.onclick = async () => {
@@ -14,6 +15,12 @@ const headline = document.querySelector(".headline");
 headline.onclick = async () => {
     await changePage(headline.getAttribute("data-href"));
     createProgramSchedule();
+}
+
+const searchProgramsPage = document.querySelector(".programs-link");
+searchProgramsPage.onclick = async () => {
+    await changePage(searchProgramsPage.getAttribute("data-href"));
+    createSearchProgramsPage();
 }
 
 const getProgramsByChannel = (channelId) => {
