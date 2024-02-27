@@ -8,7 +8,7 @@ const tvPrograms = [
         channelId: 4,
         startTime: "00:00",
         endTime: "01:00",
-        rating: 3,
+        rating: 5,
         userRating: null,
         isReplay: false
     },
@@ -34,7 +34,7 @@ const tvPrograms = [
         channelId: 4,
         startTime: "03:00",
         endTime: "04:00",
-        rating: 3,
+        rating: 4,
         userRating: null,
         isReplay: false
     },
@@ -229,7 +229,7 @@ const tvPrograms = [
         channelId: 1,
         startTime: "15:30",
         endTime: "17:00",
-        rating: 3,
+        rating: 4.5,
         userRating: null,
         isReplay: false
     }, 
@@ -346,7 +346,7 @@ const tvPrograms = [
         channelId: 2,
         startTime: "13:00",
         endTime: "16:00",
-        rating: 3,
+        rating: 4.4,
         userRating: null,
         isReplay: false
     },
@@ -521,7 +521,7 @@ const tvPrograms = [
     },
   ];
 
-
+  
   if (tvPrograms.length === 0) {
       const tvProgramsString = JSON.stringify(tvPrograms);
       localStorage.setItem("tvPrograms", tvProgramsString);
